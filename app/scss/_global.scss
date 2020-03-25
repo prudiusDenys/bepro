@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 
+
 html {
   box-sizing: border-box;
 }
@@ -10,26 +11,31 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+.page{
+  overflow-x: hidden;
+}
 html,
-body{
+body {
   width: 100%;
   height: 100%;
   position: relative;
+  font-family: 'Montserrat';
+  font-weight: 400;
 
-  &.lock{
+  &.lock {
     overflow: hidden;
   }
 }
 
-body{
-  overflow-x: hidden;
+body {
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
+  color: #000;
 }
 
 ul,
@@ -40,7 +46,161 @@ li {
 }
 
 .container {
-  max-width: 1220px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.container-menu {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave-btn {
+  position: relative;
+  width: 280px;
+  height: 60px;
+  display: flex;
+  transition: all 0.8s ease 0s;
+  justify-content: center;
+  align-items: center;
+  border-radius: 31px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.wave-btn:hover {
+  border-radius: 10px;
+  transition: all 0.8s ease 0.2s;
+  outline: none;
+}
+
+.wave-btn:hover .wave-btn__waves {
+  top: -50%;
+}
+
+.wave-btn__text {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.wave-btn__waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  background-color: $mainColor;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.8s;
+}
+
+.wave-btn__waves::after,
+.wave-btn__waves::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+}
+
+.wave-btn__waves::before {
+  background-color: #000;
+  border-radius: 48%;
+  animation: waves 5s infinite linear;
+}
+
+.wave-btn__waves::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 44%;
+  animation: waves 10s infinite linear;
+}
+
+
+@keyframes waves {
+  0% {
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
+
+.popular__date {
+  font-size: 12px;
+  margin-bottom: 13px;
+  padding-left: 17px;
+  position: relative;
+
+  &:before {
+    content: "\f017";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.popular__title {
+  @include f2reg;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.popular__comments {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  span {
+    display: inline-block;
+    flex: 0 0 50%;
+    position: relative;
+    font-size: 12px;
+    padding-left: 18px;
+
+    &:before {
+      font-family: 'icomoon';
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+
+  .comment {
+    border-right: 1px solid #fff;
+
+    &:before {
+      content: "\f086";
+    }
+  }
+
+  .likes {
+    margin-left: 14px;
+
+    &:before {
+      content: "\f004";
+    }
+  }
 }

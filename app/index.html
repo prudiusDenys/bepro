@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
+
 <body>
 
   <div class="page">
@@ -15,13 +17,664 @@
     <!-- Header -->
 
     <header class="header">
-      
+      <div class="container-menu">
+        <div class="header__content">
+          <div class="header__logo">
+            <a href="#">Be.Pro</a>
+          </div>
+          <div class="header__burger">
+            <span class="burger__span"></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li><a class="header__link" href="#">home</a></li>
+              <li><a class="header__link" href="#">shop</a></li>
+              <li><a class="header__link" href="#">portfolio</a></li>
+              <li><a class="header__link" href="#">page</a></li>
+              <li><a class="header__link" href="#">blog</a></li>
+              <li><a class="header__link" href="#">elements</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__registry-person ">
+            <a href="#" class="person active icon-user-o"></a>
+
+            <div class="header__registry">
+              <div class="login">
+                <div class="login-item">
+                  <a class="log-in" href="#">log in</a>
+                </div>
+                <div class="login-item">
+                  <a class="sign-up" href="#">sign up</a>
+                </div>
+              </div>
+              <div class="buy-column login">
+                <div class=" buy login-item ">
+                  <a class="basket icon-shopping-bag" href="#"><span>2</span></a>
+                </div>
+                <div class="buy login-item">
+                  <a class="search icon-search" href="#"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+
+    <!-- ================================= main slider ========================= -->
+
+    <section class="slider">
+      <div class="slider__content">
+        <div class="slider__firstslide">
+          <div class="slider__firstslide-img" style="background-image: url(images/main_slider/01.jpg);">
+            <div class="slider__firstslide-item">
+              <div class="slider__firstslide-title">
+                <a href="#">New Arrival</a>
+              </div>
+              <div class="wrapper">
+                <a href="#" class="wave-btn">
+                  <span class="wave-btn__text">Buy Now</span>
+                  <span class="wave-btn__waves"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__firstslide">
+          <div class="slider__firstslide-img" style="background-image: url(images/main_slider/02.jpg);">
+            <div class="slider__firstslide-item">
+              <div class="slider__firstslide-title">
+                <a href="#">Sale</a>
+              </div>
+              <div class="wrapper">
+                <a href="#" class="wave-btn">
+                  <span class="wave-btn__text">Buy Now</span>
+                  <span class="wave-btn__waves"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__firstslide">
+          <div class="slider__firstslide-img" style="background-image: url(images/main_slider/03.jpg);">
+            <div class="slider__firstslide-item">
+              <div class="slider__firstslide-title">
+                <a href="#">Clothing</a>
+              </div>
+              <div class="wrapper">
+                <a href="#" class="wave-btn">
+                  <span class="wave-btn__text">Buy Now</span>
+                  <span class="wave-btn__waves"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__firstslide">
+          <div class="slider__firstslide-img" style="background-image: url(images/main_slider/04.jpg);">
+            <div class="slider__firstslide-item">
+              <div class="slider__firstslide-title">
+                <a href="#">Bags and Shoes</a>
+              </div>
+              <div class="wrapper">
+                <a href="#" class="wave-btn">
+                  <span class="wave-btn__text">Buy Now</span>
+                  <span class="wave-btn__waves"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ info ================= -->
+
+    <section class="info">
+      <div class="container">
+        <div class="info__row">
+          <div class="info__column">
+            <div class="info__column-item icon-paper-plane-o">
+              <div class="info__title">
+                Free Shipping
+              </div>
+              <div class="info__about">
+                Oders over $99
+              </div>
+            </div>
+          </div>
+          <div class="info__column ">
+            <div class="info__column-item icon-refresh">
+              <div class="info__title">
+                30 days return
+              </div>
+              <div class="info__about">
+                If goods have problem
+              </div>
+            </div>
+          </div>
+          <div class="info__column ">
+            <div class="info__column-item icon-credit-card">
+              <div class="info__title">
+                Secure payment
+              </div>
+              <div class="info__about">
+                100% secure payment
+              </div>
+            </div>
+          </div>
+          <div class="info__column ">
+            <div class="info__column-item icon-user-o">
+              <div class="info__title">
+                24h Support
+              </div>
+              <div class="info__about">
+                Dedicated Support
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ goods ================= -->
+
+    <section class="goods">
+      <div class="container">
+        <div class="goods__content">
+          <div class="goods__row">
+
+            <div class="goods__column">
+              <div class="goods__column-sale">
+                sale
+              </div>
+              <div class="goods__column-img">
+                <a href="#">
+                  <img class="img-column" src="images/goods/item1.jpg" alt="">
+                </a>
+              </div>
+              <div class="goods__column-item">
+                <div class="goods__column-item-title">Essential cotton-blend</div>
+                <div class="goods__column-item-price"><span class="discount">$200.00 USD</span> $100.00 USD </div>
+              </div>
+            </div>
+
+            <div class="goods__column">
+              <div class="goods__column-img">
+                <a href="#">
+                  <img class="img-column" src="images/goods/item1.jpg" alt="">
+                </a>
+              </div>
+              <div class="goods__column-item">
+                <div class="goods__column-item-title">Essential cotton-blend</div>
+                <div class="goods__column-item-price">$100.00 USD</div>
+              </div>
+            </div>
+
+            <div class="goods__column">
+              <div class="goods__column-img">
+                <a href="#">
+                  <img class="img-column" src="images/goods/item1.jpg" alt="">
+                </a>
+              </div>
+              <div class="goods__column-item">
+                <div class="goods__column-item-title">Essential cotton-blend</div>
+                <div class="goods__column-item-price">$100.00 USD</div>
+              </div>
+            </div>
+
+            <div class="goods__column">
+              <div class="goods__column-img">
+                <a href="#">
+                  <img class="img-column" src="images/goods/item1.jpg" alt="">
+                </a>
+              </div>
+              <div class="goods__column-item">
+                <div class="goods__column-item-title">Essential cotton-blend</div>
+                <div class="goods__column-item-price">$100.00 USD</div>
+              </div>
+            </div>
+
+            <div class="goods__column">
+              <div class="goods__column-img">
+                <a href="#">
+                  <img class="img-column" src="images/goods/item1.jpg" alt="">
+                </a>
+              </div>
+              <div class="goods__column-item">
+                <div class="goods__column-item-title">Essential cotton-blend</div>
+                <div class="goods__column-item-price">$100.00 USD</div>
+              </div>
+            </div>
+
+            <div class="goods__column goods__column-trible"
+              style="background-image: url(images/goods/trible-picture.jpg);">
+              <div class="trible__item">
+                <div class="trible__item-new">
+                  new
+                </div>
+                <div class="trible__item-text">
+                  lifestile
+                </div>
+                <div class="trible__item-title">
+                  <a href="#">New Now: Striped cotton</a>
+                </div>
+                <div class="trible__item-button">
+                  <a href="#">
+                    <span class="trible__item-button-price">$50.00 USD</span>
+                    <span class="trible__item-button-buy">BY NOW</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="goods__column">
+              <div class="goods__column-sale">
+                sale
+              </div>
+              <div class="goods__column-img">
+                <a href="#">
+                  <img class="img-column" src="images/goods/item1.jpg" alt="">
+                </a>
+              </div>
+              <div class="goods__column-item">
+                <div class="goods__column-item-title">Essential cotton-blend</div>
+                <div class="goods__column-item-price"><span class="discount">$200.00 USD</span> $100.00 USD </div>
+              </div>
+            </div>
+
+            <div class="goods__column">
+              <div class="goods__column-img">
+                <a href="#">
+                  <img class="img-column" src="images/goods/item1.jpg" alt="">
+                </a>
+              </div>
+              <div class="goods__column-item">
+                <div class="goods__column-item-title">Essential cotton-blend</div>
+                <div class="goods__column-item-price">$100.00 USD</div>
+              </div>
+            </div>
+
+            <div class="goods__column">
+              <div class="goods__column-img">
+                <a href="#">
+                  <img class="img-column" src="images/goods/item1.jpg" alt="">
+                </a>
+              </div>
+              <div class="goods__column-item">
+                <div class="goods__column-item-title">Essential cotton-blend</div>
+                <div class="goods__column-item-price">$100.00 USD</div>
+              </div>
+            </div>
+
+            <div class="goods__column">
+              <div class="goods__column-img">
+                <a href="#">
+                  <img class="img-column" src="images/goods/item1.jpg" alt="">
+                </a>
+              </div>
+              <div class="goods__column-item">
+                <div class="goods__column-item-title">Essential cotton-blend</div>
+                <div class="goods__column-item-price">$100.00 USD</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="goods__content-more">
+            <a href="#">Load More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================    start event ========================== -->
+    <section class="event">
+      <div class="event__content">
+
+        <div class="event__wrapper">
+          <div class="event__item" style="background-image: url(images/slider-02.jpg);">
+            <div class="event__item-box">
+              <div class="event__item-box-event">
+                EVENT
+              </div>
+              <div class="event__item-box-title">
+                <a href="#">London Fashion Week September 2017</a>
+              </div>
+              <div class="event__item-box-text">
+                15th - 19th September 2017
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event__wrapper">
+          <div class="event__item" style="background-image: url(images/slider-01.jpg);">
+            <div class="event__item-box">
+              <div class="event__item-box-event">
+                EVENT
+              </div>
+              <div class="event__item-box-title">
+                <a href="#">London Fashion Week September 2017</a>
+              </div>
+              <div class="event__item-box-text">
+                15th - 19th September 2017
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event__wrapper">
+          <div class="event__item" style="background-image: url(images/slider-03.jpg);">
+            <div class="event__item-box">
+              <div class="event__item-box-event">
+                EVENT
+              </div>
+              <div class="event__item-box-title">
+                <a href="#">London Fashion Week September 2017</a>
+              </div>
+              <div class="event__item-box-text">
+                15th - 19th September 2017
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================== start suits ==================== -->
+
+
+    <section class="suits">
+      <div class="container">
+        <div class="suits__row">
+          <div class="suits__column" style="background-image: url(images/suits-01.jpg);">
+            <div class="suits__column-item">
+              <div class="suits__column-item-suits">
+                Suits
+              </div>
+              <div class="suits__column-item-title">
+                <a href="#">Slim Fit Prince of
+                  Wales Check Wool</a>
+
+              </div>
+              <div class="suits__column-item-price">
+                • 2,295.00 USD
+              </div>
+            </div>
+          </div>
+          <div class="suits__column" style="background-image: url(images/suits-02.jpg);">
+            <div class="suits__column-item">
+              <div class="suits__column-item-suits">
+                Scarves
+              </div>
+              <div class="suits__column-item-title">
+                <a href="#">Lightweight check
+                  wool cashmere scarf</a>
+
+              </div>
+              <div class="suits__column-item-price">
+                • 425.00 USD
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================    start popular   =============================== -->
+
+
+
+    <section class="popular">
+      <div class="container">
+        <div class="popular__wrapper">
+          <div class="popular__sale" style="background-image: url(images/popular/item-1.jpg);">
+            <div class="popular__sale-content">
+              <div class="popular__sale-day">
+                Number of Day
+              </div>
+              <div class="popular__sale-number">
+                197
+              </div>
+              <div class="popular__sale-title">
+                Combo Sale Off <br> Up To 50%
+              </div>
+              <div class="popular__sale-read">
+                <a href="#"> Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="popular__slider">
+            <div class="popular__box">
+              <div class="popular__header">
+                <div class="popular__header-title">
+                  Popular
+                </div>
+              </div>
+              <div class="popular__block">
+                <div class="popular__block-item">
+                  <img class="popular__block-item-img" src="images/popular/01.jpg" alt="">
+                  <div class="popular__block-item-wrapper">
+                    <div class="popular__block-item-date popular__date">
+                      Date: April 05, 2017
+                    </div>
+                    <div class="popular__block-item-title popular__title">
+                      The best Summer style
+                      from Milan Fashion Week
+                    </div>
+                    <div class="popular__block-item-comments popular__comments">
+                      <span class="comment">05</span>
+                      <span class="likes">150</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__block-mini">
+                  <div class="popular__block-mini-item">
+                    <div class="popular__block-mini-item-img">
+                      <img src="images/popular/01-mini.jpg" alt="">
+                    </div>
+                    <div class="popular__block-mini-item-box">
+                      <div class="popular__block-mini-item-date date popular__date">
+                        Date: April 05, 2017
+                      </div>
+                      <div class="popular__block-mini-item-title popular__title">
+                        Fashion Week
+                        London
+                      </div>
+                      <div class="popular__block-mini-item-comments popular__comments">
+                        <span class="comment">05</span>
+                        <span class="likes">150</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular__block-mini-item">
+                    <div class="popular__block-mini-item-img">
+                      <img src="images/popular/02-mini.jpg" alt="">
+                    </div>
+                    <div class="popular__block-mini-item-box">
+                      <div class="popular__block-mini-item-date popular__date">
+                        Date: April 05, 2017
+                      </div>
+                      <div class="popular__block-mini-item-title popular__title">
+                        Fashion Show
+                        2017
+                      </div>
+                      <div class="popular__block-mini-item-comments popular__comments">
+                        <span class="comment">05</span>
+                        <span class="likes">150</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view">
+                    <a href="#"><span>View All</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular__box">
+              <div class="popular__header">
+                <div class="popular__header-title">
+                  Popular
+                </div>
+              </div>
+              <div class="popular__block">
+                <div class="popular__block-item">
+                  <img class="popular__block-item-img" src="images/popular/01.jpg" alt="">
+                  <div class="popular__block-item-wrapper">
+                    <div class="popular__block-item-date popular__date">
+                      Date: April 05, 2017
+                    </div>
+                    <div class="popular__block-item-title popular__title">
+                      The best Summer style
+                      from Milan Fashion Week
+                    </div>
+                    <div class="popular__block-item-comments popular__comments">
+                      <span class="comment">05</span>
+                      <span class="likes">150</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__block-mini">
+                  <div class="popular__block-mini-item">
+                    <div class="popular__block-mini-item-img">
+                      <img src="images/popular/01-mini.jpg" alt="">
+                    </div>
+                    <div class="popular__block-mini-item-box">
+                      <div class="popular__block-mini-item-date date popular__date">
+                        Date: April 05, 2017
+                      </div>
+                      <div class="popular__block-mini-item-title popular__title">
+                        Fashion Week
+                        London
+                      </div>
+                      <div class="popular__block-mini-item-comments popular__comments">
+                        <span class="comment">05</span>
+                        <span class="likes">150</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="popular__block-mini-item">
+                    <div class="popular__block-mini-item-img">
+                      <img src="images/popular/02-mini.jpg" alt="">
+                    </div>
+                    <div class="popular__block-mini-item-box">
+                      <div class="popular__block-mini-item-date popular__date">
+                        Date: April 05, 2017
+                      </div>
+                      <div class="popular__block-mini-item-title popular__title">
+                        Fashion Show
+                        2017
+                      </div>
+                      <div class="popular__block-mini-item-comments popular__comments">
+                        <span class="comment">05</span>
+                        <span class="likes">150</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view">
+                    <a href="#"><span>View All</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================    end popular   =============================== -->
+    <!-- ==============================    start products__slider   =============================== -->
+
+    <section class="products__slider">
+      <div class="container">
+        <div class="products__slider-content">
+          <div class="products__slider-item">
+            <img src="images/products__slider/item-01.jpg" alt="">
+          </div>
+          <div class="products__slider-item">
+            <img src="images/products__slider/item-02.jpg" alt="">
+          </div>
+          <div class="products__slider-item">
+            <img src="images/products__slider/item-03.jpg" alt="">
+          </div>
+          <div class="products__slider-item">
+            <img src="images/products__slider/item-04.jpg" alt="">
+          </div>
+          <div class="products__slider-item">
+            <img src="images/products__slider/item-01.jpg" alt="">
+          </div>
+          <div class="products__slider-item">
+            <img src="images/products__slider/item-02.jpg" alt="">
+          </div>
+          <div class="products__slider-item">
+            <img src="images/products__slider/item-03.jpg" alt="">
+          </div>
+          <div class="products__slider-item">
+            <img src="images/products__slider/item-04.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==============================    end products__slider   =============================== -->
 
     <!-- Footer -->
 
     <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
 
+          <div class="footer__column order-1">
+            <div class="column-title">
+              ModaX
+            </div>
+            <div class="column-social">
+              <ul class="social-list">
+                <li><a class="social-link icon-facebook" href="#"></a></li>
+                <li><a class="social-link icon-twitter" href="#"></a></li>
+                <li><a class="social-link icon-behance" href="#"></a></li>
+                <li><a class="social-link icon-google-plus-circle" href="#"></a></li>
+                <li><a class="social-link icon-linkedin" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__column order-2">
+            <div class="footer__category">
+              <ul class="category__list">
+                <li class="category__link"><a href="#">Man</a></li>
+                <li class="category__link"><a href="#">Woman</a></li>
+                <li class="category__link"><a href="#">Lookbook</a></li>
+                <li class="category__link"><a href="#">Sale</a></li>
+                <li class="category__link"><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footer__subscribe">
+              Subscribe to news
+            </div>
+            <form class="footer__form">
+              <input class="footer__form-email" type="email" placeholder="Email Adress" required>
+              <input class="footer__form-btn" type="submit" value="Submit">
+            </form>
+          </div>
+
+          <div class="footer__column order-3">
+            <div class="footer__contact">
+              Contact US
+            </div>
+            <div class="footer__adress">
+              San Francisco, California <br>
+              400 Castro St, San Francisco, CA
+              <a href="tel:16868689999">(+1) 686-868-9999</a>
+            </div>
+            <div class="footer__cards">
+              <img src="images/sprite/item-sprite.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
   </div>
@@ -30,4 +683,5 @@
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

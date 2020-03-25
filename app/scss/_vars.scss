@@ -1,0 +1,25 @@
+@mixin f2reg{
+  font-family: 'Playfair Display';
+  font-weight: 400;
+}
+@mixin f2bold {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+}
+@mixin f2blackit {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+}
+
+@mixin f1light {
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+@mixin f1bold {
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+$mainColor: #3853d8;
+$textColor: #999999;
